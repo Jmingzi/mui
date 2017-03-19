@@ -1,0 +1,36 @@
+@import "../font/mixin-font";
+
+%common {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 200%;
+    height: 200%;
+    border-style:solid;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+@mixin border($color, $borderRadius, $borderWidth, $zIndex) {
+    position: relative;
+    border: none;
+    &:before {
+        border-color: $color;
+        border-width: $borderWidth;
+        border-radius: $borderRadius;
+        z-index: $zIndex;
+        @extend %common;
+    }
+}

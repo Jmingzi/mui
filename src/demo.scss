@@ -1,0 +1,29 @@
+@import "./basic/font/mixin-font";
+@import "./basic/color/mixin-color";
+
+body {
+    width: 10rem;
+    margin: 0 auto;
+
+    border: 1px #cdcdcd solid;
+}
+
+.module {
+    @include px(14);
+    //@extend .px-font-14;
+
+    .title {
+        @include px(18);
+    }
+    p {
+        border-bottom: 1px #ddd dashed;
+        padding: 13px 0;
+    }
+
+    &.text {
+        .over-text {
+            width: 100px;
+            @extend %color-red;
+        }
+    }
+}

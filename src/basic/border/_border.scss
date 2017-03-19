@@ -1,0 +1,14 @@
+@import "../var";
+@import "./mixin-border";
+
+$borderType: (l: 0 0 0 1px, r: 0 1px 0 0, t: 1px 0 0 0, b: 0 0 1px 0);
+@each $k,$v in $color {
+    .bd-#{$k} {
+        @include border($v, 5px, 1px, 1)
+    }
+    @each $type, $width in $borderType {
+        .bd-#{$k}-#{$type} {
+            @include border($v, 5px, $width, 1)
+        }
+    }
+}

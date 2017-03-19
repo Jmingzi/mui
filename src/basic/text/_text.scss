@@ -1,0 +1,17 @@
+@import "./mixin-text";
+
+$align: left right center;
+@each $a in $align {
+    @include text($a)
+}
+
+.no-wrap {
+    @extend %nowrap;
+}
+
+.over-text {
+    @extend %overText;
+}
+
+.line-through { text-decoration: line-through }
+.line-none { text-decoration: none }
