@@ -1,0 +1,16 @@
+@import "../var";
+@import "./mixin-font";
+
+// font rem
+@each $i in $sizeType {
+    @each $f in $font {
+        .#{$i}-font-#{$f} {
+            @if ($i == 'px') {
+                @include px($f)
+            }
+            @else {
+                @include rem($f)
+            }
+        }
+    }
+}

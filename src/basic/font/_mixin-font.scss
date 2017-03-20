@@ -1,0 +1,44 @@
+@import "../var";
+
+@function px2rem($px){
+    @return $px/$baseFontSize * 1rem; 
+}
+@function px2rem2($px){ 
+    @return px2rem($px*2); 
+}
+
+// font px dpr
+@mixin font-dpr($font-size){
+    font-size: $font-size * 1px;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2px;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3px;
+    }
+}
+
+// font px
+@mixin px($f) {
+    font-size: $f * 1px;
+}
+
+// font rem
+@mixin rem($f) {
+    font-size: px2rem2($f);
+}
+
+@each $i in $sizeType {
+    @each $f in $font {
+        %#{$i}-font-#{$f} {
+            @if ($i == 'px') {
+                @include px($f)
+            }
+            @else {
+                @include rem($f)
+            }
+        }
+    }
+}
+
+

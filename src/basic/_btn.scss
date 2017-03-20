@@ -1,0 +1,23 @@
+@import "mfunction";
+
+.btn {
+    display: inline-block;
+    border-radius: px2rem2(4);
+    text-align: center;
+    &.block {
+        display: block;
+        border: 1px transparent solid;
+        line-height: 42px;
+        font-size: 16px;
+    }
+
+    &.default {
+        color: #FC9153;
+        border-color: #FC9153;
+    }
+    &.blue {
+        background-color: #FC9153;
+        color: #ffffff;
+        border-color: #FC9153;
+    }
+}

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+// 开启gpu加速
+@mixin GPU {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility:hidden;
+    -webkit-perspective:1000;
+}
+
+// @include absolute-middle(params) { @content }
+@mixin absolute-middle ($width, $height, $top, $left) {
+    position: absolute;
+    width:px2rem($width);
+    height:px2rem($height);
+    @if ($top != "") {
+        top: px2rem($top);
+    } @else {
+        top:50%;
+        margin-top: px2rem(-$height/2);
+    }
+    @if ($left != "") {
+        left: px2rem($left);
+    } @else {
+        left:50%;
+        margin-left: px2rem(-$width/2);
+    }
+    @content;
+}
+
+// 三角
+%triangle {
+    width: 0;
+    height: 0;
+    border-left: px2rem(12) solid transparent;
+    border-right: px2rem(12) solid transparent;
+    $borderColor:#B4B4B4;
+    display:inline-block;
+    float:right;
+    margin:px2rem(35) px2rem(40) auto auto;
+    &.down{
+        border-top: px2rem(14) solid $borderColor;
+    }
+    &.up{
+        border-bottom:px2rem(14) solid $borderColor;
+    }
+}
+
+@function sizeMethod($size, $type) {
+    @if ($type == 'rem') {
+        @return px2rem2($size);
+    }
+    @else {
+        @return $size * 1px;
+    }
+}

@@ -1,0 +1,19 @@
+.module.text .over-text {
+  color: #fa565a; }
+
+body {
+  width: 10rem;
+  margin: 0 auto;
+  border: 1px #cdcdcd solid; }
+
+.module {
+  font-size: 14px; }
+  .module .title {
+    font-size: 18px; }
+  .module p {
+    border-bottom: 1px #ddd dashed;
+    padding: 13px 0; }
+  .module.text .over-text {
+    width: 100px; }
+
+/*# sourceMappingURL=demo.css.map */

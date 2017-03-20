@@ -1,0 +1,28 @@
+@import 'mfunction';
+
+.tag {
+    display: inline-block;
+    padding: px2rem2(3) px2rem2(10);
+    border: 1px transparent solid;
+    border-radius: px2rem2(2);
+
+    &.green {
+        $c: #48D28F;
+        border-color: $c;
+        color: $c;
+    }
+
+    &.small {
+        font-size: px2rem2(12);
+        padding: px2rem2(2) px2rem2(3);
+        i {
+            font-size: px2rem2(12);
+        }
+    }
+
+    &.gray {
+        background-color: #666;
+        border-radius: px2rem2(2);
+        color: #ffffff;
+    }
+}

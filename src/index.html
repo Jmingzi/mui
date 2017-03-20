@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MUI</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script>
+        var docEl = window.document.documentElement;
+        var width = docEl.getBoundingClientRect().width;
+
+        width = width > 540 ? 540 : width
+        docEl.style.fontSize = width / 10 + 'px';
+    </script>
+    <link rel="stylesheet" href="basic/mui.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body class="px-padding-10">
+<script src="./component/loading/loading-svg.js"></script>
+
+<h1 id="name" class="rem-font-20 color-red text-center px-padding-tb10">MUI - 基于sass的UI轮子</h1>
+
+<p class="px-font-12">注：尺寸的单位有px和rem，所有关于尺寸的命名都是以px-／rem-开头；样式的引入方式有3种：class／@mixin／@extend占位符"%";(@extend基础样式"."会带来额外的引用)</p>
+
+<div class="module font">
+    <h1 class="title">字体</h1>
+    <p class="px-font-14">说明：引入方式：class／占位符%</p>
+    <p class="px-font-14">14px单位字体／font-px-14／@include px(14)</p>
+    <p class="rem-font-14">14rem单位字体／font-14／@include rem(14)</p>
+</div>
+
+<div class="module text">
+    <h1 class="title">文本</h1>
+    <p>说明：文本包括文本对齐方式，overText，noWrap；引入方式：class／占位符%</p>
+    <p class="text-left">text-left</p>
+    <p class="text-center">text-center</p>
+    <p class="text-right">text-right</p>
+    <p class="over-text">overText,noWrap,overText</p>
+    <p class="line-through">line-through</p>
+    <p>
+        <a href="javascript:;">default-line</a>
+    </p>
+    <p>
+        <a href="javascript:;" class="line-none">line-none</a>
+    </p>
+</div>
+
+<div class="module color">
+    <h1 class="title">颜色</h1>
+    <p>说明：颜色包含字体颜色，背景，边框颜色; 引入方式：class／占位符%</p>
+    <p class="color-black">黑色color-black,bg-black,bd-black</p>
+    <p class="color-red">红色color-red,bg-red,bd-red</p>
+    <p class="color-blue">蓝色color-blue,bg-blue,bd-blue</p>
+    <p class="color-yellow">黄色color-yellow,bg-yellow,bd-yellow</p>
+    <p class="color-gray">灰色color-gray,bg-gray,bd-gray</p>
+</div>
+
+<div class="module mp">
+    <h1 class="title">内外边距</h1>
+    <p>说明：内外边距均区分px／rem，现有全／左／上／右／下／左右／上下 内外边距，大小为5，10，15，20</p>
+    <p class="px-margin-10">px-margin-10</p>
+    <p class="rem-margin-10">rem-margin-10</p>
+    <p class="px-margin-b20">px-margin-b20</p>
+    <p class="rem-margin-l20">rem-margin-l20</p>
+</div>
+
+<div class="module layout">
+    <h1 class="title">排列方式</h1>
+    <p>说明：排列方式</p>
+    <p class="">fl/fr</p>
+    <p class="m-scroll">m-scroll / -webkit-overflow-scrolling: touch;</p>
+    <p class="">position-s/position-r/position-a/position-f</p>
+    <p>display-i/display-ib/display-n/display-b</p>
+</div>
+
+<div class="module border">
+    <h1 class="title">边框</h1>
+    <p>说明：边框均为1px，5px圆角，before绝对定位放大200%后再scale 0.5后得到的大小</p>
+    <p class="bd-red">边框红色bd-red</p>
+    <p class="bd-blue-l">左边框蓝色bd-blue-l</p>
+</div>
+
+<script>
+    setTimeout(function () {
+        Loading.hide()
+    }, 1000)
+</script>
+</body>
+</html>

@@ -35,6 +35,9 @@
         position: $v;
     }
 }
+%m-scroll {
+    -webkit-overflow-scrolling: touch;
+}
 %fl { float: left }
 %fr { float: right }
 %cl{
