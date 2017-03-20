@@ -829,4 +829,63 @@ input:-moz-placeholder {
     border-radius: 5px;
     z-index: 1; }
 
+.btn {
+  display: inline-block;
+  text-align: center;
+  border: 1px #ccc solid;
+  color: #666;
+  text-decoration: none; }
+  .disabled.btn {
+    background-color: #cccccc !important;
+    color: #aaaaaa !important;
+    border-color: #cccccc !important;
+    cursor: not-allowed;
+    pointer-events: none; }
+  .red.btn {
+    background-color: #fa565a;
+    border-color: #fa565a;
+    color: #ffffff; }
+    .red.inverse.btn {
+      background-color: #fff;
+      color: #fa565a; }
+  .blue.btn {
+    background-color: #0099cc;
+    border-color: #0099cc;
+    color: #ffffff; }
+    .blue.inverse.btn {
+      background-color: #fff;
+      color: #0099cc; }
+  .black.btn {
+    background-color: #333;
+    border-color: #333;
+    color: #ffffff; }
+    .black.inverse.btn {
+      background-color: #fff;
+      color: #333; }
+  .gray.btn {
+    background-color: #aaa;
+    border-color: #aaa;
+    color: #ffffff; }
+    .gray.inverse.btn {
+      background-color: #fff;
+      color: #aaa; }
+  .yellow.btn {
+    background-color: #FC9153;
+    border-color: #FC9153;
+    color: #ffffff; }
+    .yellow.inverse.btn {
+      background-color: #fff;
+      color: #FC9153; }
+
+.btn.px-btn {
+  padding: 7px 20px;
+  border-radius: 4px; }
+.btn.rem-btn {
+  padding: 0.13333rem 0.26667rem;
+  border-radius: 0.10667rem; }
+  .btn.rem-btn.block {
+    display: block;
+    padding: 0;
+    line-height: 1.06667rem; }
+
 /*# sourceMappingURL=mui.css.map */

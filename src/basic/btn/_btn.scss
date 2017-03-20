@@ -1,0 +1,22 @@
+@import "../var";
+@import "../function";
+@import "./mixin-btn";
+
+.btn {
+    @extend %btn;
+
+    &.px-btn {
+        padding: 7px 20px;
+        border-radius: 4px;
+    }
+    &.rem-btn {
+        padding: sizeMethod(5, 'rem') sizeMethod(10, 'rem');
+        border-radius: sizeMethod(4, 'rem');
+
+        &.block {
+            display: block;
+            padding: 0;
+            line-height: sizeMethod(40, 'rem');
+        }
+    }
+}

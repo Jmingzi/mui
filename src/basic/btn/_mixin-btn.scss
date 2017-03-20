@@ -1,0 +1,33 @@
+@import "../var";
+@import "../layout/mixin-layout";
+@import "../font/mixin-font";
+
+%btn {
+    display: inline-block;
+    text-align: center;
+    border: 1px #ccc solid;
+    color: #666;
+    text-decoration: none;
+
+    &.disabled {
+        background-color: #cccccc!important;
+        color: #aaaaaa!important;
+        border-color: #cccccc!important;
+        
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    @each $k, $v in $color {
+        &.#{$k} {
+            background-color: $v;
+            border-color: $v;
+            color: #ffffff;
+
+            &.inverse {
+                background-color: #fff;
+                color: $v;
+            }
+        }
+    }
+}

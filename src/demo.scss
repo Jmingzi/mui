@@ -1,5 +1,6 @@
 @import "./basic/font/mixin-font";
 @import "./basic/color/mixin-color";
+@import "./basic/layout/mixin-layout";
 
 body {
     width: 10rem;
@@ -10,10 +11,13 @@ body {
 
 .module {
     @include px(14);
-    //@extend .px-font-14;
 
     .title {
         @include px(18);
+        @extend %bg-red;
+        color: #ffffff;
+        margin: 20px 0 10px 0;
+        border-radius: 5px;
     }
     p {
         border-bottom: 1px #ddd dashed;

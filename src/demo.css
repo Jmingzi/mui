@@ -1,6 +1,9 @@
 .module.text .over-text {
   color: #fa565a; }
 
+.module .title {
+  background-color: #fa565a; }
+
 body {
   width: 10rem;
   margin: 0 auto;
@@ -9,7 +12,10 @@ body {
 .module {
   font-size: 14px; }
   .module .title {
-    font-size: 18px; }
+    font-size: 18px;
+    color: #ffffff;
+    margin: 20px 0 10px 0;
+    border-radius: 5px; }
   .module p {
     border-bottom: 1px #ddd dashed;
     padding: 13px 0; }

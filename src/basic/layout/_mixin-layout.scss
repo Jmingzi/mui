@@ -19,7 +19,7 @@
         }
         @each $k, $kv in $mp {
             %#{$i}-margin-#{$k} {
-                padding: $kv;
+                margin: $kv;
             }
         }
     }
@@ -52,3 +52,22 @@
     }
 }
 
+// @include absolute-middle(params) { @content }
+@mixin absolute-middle ($width, $height, $top, $left) {
+    position: absolute;
+    width:px2rem($width);
+    height:px2rem($height);
+    @if ($top != "") {
+        top: px2rem($top);
+    } @else {
+        top:50%;
+        margin-top: px2rem(-$height/2);
+    }
+    @if ($left != "") {
+        left: px2rem($left);
+    } @else {
+        left:50%;
+        margin-left: px2rem(-$width/2);
+    }
+    @content;
+}
