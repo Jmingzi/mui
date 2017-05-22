@@ -11,24 +11,6 @@
     -webkit-perspective:1000;
 }
 
-// 三角
-// %triangle {
-//     width: 0;
-//     height: 0;
-//     border-left: px2rem(12) solid transparent;
-//     border-right: px2rem(12) solid transparent;
-//     $borderColor:#B4B4B4;
-//     display:inline-block;
-//     float:right;
-//     margin:px2rem(35) px2rem(40) auto auto;
-//     &.down{
-//         border-top: px2rem(14) solid $borderColor;
-//     }
-//     &.up{
-//         border-bottom:px2rem(14) solid $borderColor;
-//     }
-// }
-
 @function sizeMethod($size, $type) {
     @if ($type == 'rem') {
         @return px2rem2($size);
