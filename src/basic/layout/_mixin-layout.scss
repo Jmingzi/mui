@@ -4,13 +4,13 @@
 @each $i in $sizeType {
     @each $v in $mpSize {
         $mp: (
-                $v: sizeMethod($v, $i),
-                tb+$v: sizeMethod($v, $i) 0,
-                lr+$v: 0 sizeMethod($v, $i),
-                t+$v: sizeMethod($v, $i) 0 0 0,
-                l+$v: 0 0 0 sizeMethod($v, $i),
-                r+$v: 0 sizeMethod($v, $i) 0 0,
-                b+$v: 0 0 sizeMethod($v, $i) 0
+            $v: sizeMethod($v, $i),
+            tb+$v: sizeMethod($v, $i) 0,
+            lr+$v: 0 sizeMethod($v, $i),
+            t+$v: sizeMethod($v, $i) 0 0 0,
+            l+$v: 0 0 0 sizeMethod($v, $i),
+            r+$v: 0 sizeMethod($v, $i) 0 0,
+            b+$v: 0 0 sizeMethod($v, $i) 0
         );
         @each $k, $kv in $mp {
             %#{$i}-padding-#{$k} {

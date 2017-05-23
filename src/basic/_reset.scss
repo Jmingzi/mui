@@ -97,20 +97,6 @@ textarea {
     touch-action: manipulation;
 }
 
-.select-none {
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.highlight-none {
-    -webkit-highlight: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-.touch-scroll {
-    -webkit-overflow-scrolling: touch;
-}
-
 [role="button"] {
     cursor: pointer;
 }

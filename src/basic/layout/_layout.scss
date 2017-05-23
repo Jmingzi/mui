@@ -9,26 +9,11 @@
         display: $v;
     }
 }
+
 @each $k,$v in $position {
     .position-#{$k} {
         position: $v;
     }
-}
-.fl { float: left }
-.fr { float: right }
-.cl{
-    &{ *zoom:1; }
-    &:after,
-    &:before{
-        content: ".";
-        display:block;
-        clear: both;
-        height: 0;
-        overflow: hidden;
-    }
-}
-.m-scroll {
-    -webkit-overflow-scrolling: touch;
 }
 
 //$value: 5 10 15 20;
@@ -36,13 +21,13 @@
 @each $i in $sizeType {
     @each $v in $mpSize {
         $mp: (
-                $v: sizeMethod($v, $i),
-                tb+$v: sizeMethod($v, $i) 0,
-                lr+$v: 0 sizeMethod($v, $i),
-                t+$v: sizeMethod($v, $i) 0 0 0,
-                l+$v: 0 0 0 sizeMethod($v, $i),
-                r+$v: 0 sizeMethod($v, $i) 0 0,
-                b+$v: 0 0 sizeMethod($v, $i) 0
+            $v: sizeMethod($v, $i),
+            tb+$v: sizeMethod($v, $i) 0,
+            lr+$v: 0 sizeMethod($v, $i),
+            t+$v: sizeMethod($v, $i) 0 0 0,
+            l+$v: 0 0 0 sizeMethod($v, $i),
+            r+$v: 0 sizeMethod($v, $i) 0 0,
+            b+$v: 0 0 sizeMethod($v, $i) 0
         );
         @each $k, $kv in $mp {
             .#{$i}-padding-#{$k} {
