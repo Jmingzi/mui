@@ -8,7 +8,7 @@
     -o-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility:hidden;
-    -webkit-perspective:1000;
+    -webkit-perspective: 1000;
 }
 
 @function sizeMethod($size, $type) {

@@ -4,20 +4,3 @@
     }
 }
 
-%overText{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-%nowrap{
-    white-space: nowrap;
-    word-break: keep-all;
-}
-
-%line-through {
-    text-decoration: line-through
-}
-%line-none {
-    text-decoration: none
-}

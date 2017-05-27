@@ -95,9 +95,25 @@ $mpType: t r b l lr tb;
 
 
 ## 标签
+> 涉及尺寸的前缀均为 `px-/rem-`
+
++ [前缀]-tag-[color]
++ [前缀]-tag-bg-[color]
++ tag-small
 
 ## 文本
+```sass
+// [align]
+$align: left right center;
+```
 
++ text-[align]
++ no-wrap
++ over-text
++ line-through
++ line-none
+
+## 编译
 
 ``` bash
 # compile

@@ -1,6 +1,6 @@
+@import '../var';
 @import "./mixin-text";
 
-$align: left right center;
 @each $a in $align {
     @include text($a)
 }

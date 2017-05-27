@@ -1,28 +1,42 @@
-@import 'mfunction';
+@import '../font/mixin-font';
 
-.tag {
+%tag {
     display: inline-block;
-    padding: px2rem2(3) px2rem2(10);
     border: 1px transparent solid;
     border-radius: px2rem2(2);
+    font-size: px2rem2(12);
 
-    &.green {
-        $c: #48D28F;
-        border-color: $c;
-        color: $c;
-    }
+    @each $k, $v in $color {
 
-    &.small {
-        font-size: px2rem2(12);
-        padding: px2rem2(2) px2rem2(3);
-        i {
-            font-size: px2rem2(12);
+        &.tag-#{$k} {
+            border-color: $v;
+            color: $v;
+        }
+
+        &.tag-bg-#{$k} {
+            border-color: $v;
+            background-color: $v;
+            color: #ffffff;
         }
     }
+}
 
-    &.gray {
-        background-color: #666;
-        border-radius: px2rem2(2);
-        color: #ffffff;
+.rem-tag {
+    @extend %tag;
+
+    padding: px2rem2(3) px2rem2(10);
+
+    &.tag-small {
+        padding: px2rem2(2) px2rem2(3);
+    }
+}
+
+.px-tag {
+    @extend %tag;
+
+    padding: 3px 10px;
+
+    &.tag-small {
+        padding: 2px 3px;
     }
 }
