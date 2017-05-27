@@ -10,7 +10,7 @@
 // radius
 @each $borderRadius in $mpSize {
     .bd-radius-#{$borderRadius} {
-        border-radius: $borderRadius;
+        border-radius: $borderRadius * 1px;
     }
 }
 

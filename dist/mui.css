@@ -853,25 +853,25 @@ textarea {
     z-index: 1; }
 
 .bd-radius-5 {
-  border-radius: 5; }
+  border-radius: 5px; }
 
 .bd-radius-10 {
-  border-radius: 10; }
+  border-radius: 10px; }
 
 .bd-radius-15 {
-  border-radius: 15; }
+  border-radius: 15px; }
 
 .bd-radius-20 {
-  border-radius: 20; }
+  border-radius: 20px; }
 
 .bd-radius-25 {
-  border-radius: 25; }
+  border-radius: 25px; }
 
 .bd-radius-30 {
-  border-radius: 30; }
+  border-radius: 30px; }
 
 .bd-radius-40 {
-  border-radius: 40; }
+  border-radius: 40px; }
 
 .m-bd-success {
   position: relative;
