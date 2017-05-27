@@ -5,26 +5,24 @@
 %btn {
     display: inline-block;
     text-align: center;
-    border: 1px #ccc solid;
-    color: #666;
     text-decoration: none;
 
-    &.disabled {
-        background-color: #cccccc!important;
-        color: #aaaaaa!important;
-        border-color: #cccccc!important;
+    &.btn-disabled {
+        background-color: $gray-light !important;
+        color: $gray-dark !important;
+        border-color: $gray !important;
         
         cursor: not-allowed;
         pointer-events: none;
     }
 
     @each $k, $v in $color {
-        &.#{$k} {
+        &.btn-#{$k} {
             background-color: $v;
-            border-color: $v;
+            border-color: darken($v, 20%);
             color: #ffffff;
 
-            &.inverse {
+            &.btn-inverse {
                 background-color: #fff;
                 color: $v;
             }

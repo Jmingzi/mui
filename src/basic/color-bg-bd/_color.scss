@@ -1,16 +1,14 @@
 @import "../var";
-@import "mixin-color";
 
-//$color: (red: #fa565a, blue: #0099cc, black: #333, gray: #aaa, yellow: #FC9153);
 @each $k, $v in $color {
     .color-#{$k} {
         color: $v;
     }
     .bg-#{$k} {
-        @include bg($v);
+        background-color: $v;
     }
     .bd-#{$k} {
-        @include bd($v);
+        border-color: $v;
     }
 }
 

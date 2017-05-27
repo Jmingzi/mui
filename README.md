@@ -12,7 +12,6 @@
 + [标签](#标签)
 + [文本](#文本)
 
----------
 
 ## 变量说明
 
@@ -33,12 +32,12 @@ $color: (
 ``` sass
 // [borderType]
 $borderType: (
-        l: 0 0 0 1px,
-        r: 0 1px 0 0,
-        t: 1px 0 0 0,
-        b: 0 0 1px 0,
-        lr: 0 1px,
-        tb: 1px 0
+    l: 0 0 0 1px,
+    r: 0 1px 0 0,
+    t: 1px 0 0 0,
+    b: 0 0 1px 0,
+    lr: 0 1px,
+    tb: 1px 0
 );
 ```
 
@@ -49,8 +48,22 @@ $borderType: (
 + bd-[color]-[borderType]
 
 ## 按钮
+> 涉及尺寸的前缀均为 `px-/rem-`
+
++ btn
++ px-btn
++ rem-btn
++ btn-disabled
++ btn-[color]
++ btn-inverse
++ btn-block
 
 ## 颜色
+> 颜色分为色值／背景色／边框色
+
++ color-[color]
++ bg-[color]
++ bd-[color]
 
 ## 字体
 
@@ -60,7 +73,6 @@ $borderType: (
 
 ## 文本
 
----------
 
 ``` bash
 # compile
