@@ -1433,55 +1433,53 @@ textarea {
 .btn {
   display: inline-block;
   text-align: center;
-  border: 1px #ccc solid;
-  color: #666;
   text-decoration: none; }
-  .disabled.btn {
-    background-color: #cccccc !important;
-    color: #aaaaaa !important;
-    border-color: #cccccc !important;
+  .btn-disabled.btn {
+    background-color: #636c72 !important;
+    color: #292b2c !important;
+    border-color: #464a4c !important;
     cursor: not-allowed;
     pointer-events: none; }
-  .success.btn {
+  .btn-success.btn {
     background-color: #5cb85c;
-    border-color: #5cb85c;
+    border-color: #357935;
     color: #ffffff; }
-    .success.inverse.btn {
+    .btn-success.btn-inverse.btn {
       background-color: #fff;
       color: #5cb85c; }
-  .error.btn {
+  .btn-error.btn {
     background-color: #d9534f;
-    border-color: #d9534f;
+    border-color: #a02622;
     color: #ffffff; }
-    .error.inverse.btn {
+    .btn-error.btn-inverse.btn {
       background-color: #fff;
       color: #d9534f; }
-  .info.btn {
+  .btn-info.btn {
     background-color: #0275d8;
-    border-color: #0275d8;
+    border-color: #013e73;
     color: #ffffff; }
-    .info.inverse.btn {
+    .btn-info.btn-inverse.btn {
       background-color: #fff;
       color: #0275d8; }
-  .dark.btn {
+  .btn-dark.btn {
     background-color: #292b2c;
-    border-color: #292b2c;
+    border-color: black;
     color: #ffffff; }
-    .dark.inverse.btn {
+    .btn-dark.btn-inverse.btn {
       background-color: #fff;
       color: #292b2c; }
-  .warning.btn {
+  .btn-warning.btn {
     background-color: #f0ad4e;
-    border-color: #f0ad4e;
+    border-color: #c77c11;
     color: #ffffff; }
-    .warning.inverse.btn {
+    .btn-warning.btn-inverse.btn {
       background-color: #fff;
       color: #f0ad4e; }
-  .fff.btn {
+  .btn-fff.btn {
     background-color: #ffffff;
-    border-color: #ffffff;
+    border-color: #cccccc;
     color: #ffffff; }
-    .fff.inverse.btn {
+    .btn-fff.btn-inverse.btn {
       background-color: #fff;
       color: #ffffff; }
 
@@ -1491,7 +1489,7 @@ textarea {
 .btn.rem-btn {
   padding: 0.13333rem 0.26667rem;
   border-radius: 0.10667rem; }
-  .btn.rem-btn.block {
+  .btn.rem-btn.btn-block {
     display: block;
     padding: 0;
     line-height: 1.06667rem; }

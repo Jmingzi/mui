@@ -41,6 +41,19 @@ $borderType: (
 );
 ```
 
+字体大小
+``` sass
+// [fontSize]
+$font: 8 10 12 14 16 18 20 24 28 32 40 45 !default;
+```
+
+边距大小
+``` sass
+// [mpSize]
+$mpSize: 5 10 15 20 25 30 40 !default;
+```
+
+
 ## 边框
 > 移动端有前缀m-，实现利用的伪元素边框缩放
 
@@ -50,9 +63,8 @@ $borderType: (
 ## 按钮
 > 涉及尺寸的前缀均为 `px-/rem-`
 
++ [前缀]-btn
 + btn
-+ px-btn
-+ rem-btn
 + btn-disabled
 + btn-[color]
 + btn-inverse
@@ -66,8 +78,21 @@ $borderType: (
 + bd-[color]
 
 ## 字体
+> 涉及尺寸的前缀均为 `px-/rem-`
+
++ [前缀]-font-[fontSize]
 
 ## 内外边距
+> 涉及尺寸的前缀均为 `px-/rem-`
+
+```sass
+// [mpType]
+$mpType: t r b l lr tb;
+```
+
++ [前缀]-margin-[fontSize]-[mpType][mpSize]
++ [前缀]-padding-[fontSize]-[mpType][mpSize]
+
 
 ## 标签
 

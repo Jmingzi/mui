@@ -28,17 +28,5 @@
     font-size: px2rem2($f);
 }
 
-@each $i in $sizeType {
-    @each $f in $font {
-        %#{$i}-font-#{$f} {
-            @if ($i == 'px') {
-                @include px($f)
-            }
-            @else {
-                @include rem($f)
-            }
-        }
-    }
-}
 
 
