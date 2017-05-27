@@ -38,7 +38,7 @@ $borderType: (
     b: 0 0 1px 0,
     lr: 0 1px,
     tb: 1px 0
-);
+) !default;
 ```
 
 字体大小
