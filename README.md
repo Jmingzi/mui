@@ -1,11 +1,9 @@
 # mui
-移动端全局ui
-
-sass --watch _index.scss:../../dist/mui.css --style compressed
+> 兼容pc移动端的全局ui
 
 属性目录：
 
-+ [utilities 属性说明请戳这里](./utilities)
++ [utilities](./src/basic/utilities)
 + [边框](#边框)
 + [按钮](#按钮)
 + [颜色](#颜色)
@@ -30,3 +28,10 @@ sass --watch _index.scss:../../dist/mui.css --style compressed
 ## 标签
 
 ## 文本
+
+---------
+
+``` bash
+# compile
+sass --watch _index.scss:../../dist/mui.css --style compressed
+```
