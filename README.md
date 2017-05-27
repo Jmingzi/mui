@@ -14,8 +14,39 @@
 
 ---------
 
+## 变量说明
+
+颜色值
+``` sass
+// [color]
+$color: (
+    success: $green,
+    error: $red,
+    info: $blue,
+    dark: $gray-dark,
+    warning: $orange,
+    fff: #ffffff
+) !default;
+```
+
+边框方向类型
+``` sass
+// [borderType]
+$borderType: (
+        l: 0 0 0 1px,
+        r: 0 1px 0 0,
+        t: 1px 0 0 0,
+        b: 0 0 1px 0,
+        lr: 0 1px,
+        tb: 1px 0
+);
+```
+
 ## 边框
->
+> 移动端有前缀m-，实现利用的伪元素边框缩放
+
++ bd-[color]
++ bd-[color]-[borderType]
 
 ## 按钮
 
