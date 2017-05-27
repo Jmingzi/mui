@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAUI,uBAAa;EACT,KAAK,ECGC,OAAO;;ADDjB,cAAU;EACN,gBAAgB,ECAV,OAAO;;ACVrB,IAAK;EACD,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM;EAEd,MAAM,EAAE,iBAAiB;;AAG7B,OAAQ;ECWJ,SAAS,EAAE,IAAQ;EDRnB,cAAO;ICQP,SAAS,EAAE,IAAQ;IDLf,KAAK,EAAE,OAAO;IACd,MAAM,EAAE,aAAa;IACrB,aAAa,EAAE,GAAG;EAEtB,SAAE;IACE,aAAa,EAAE,eAAe;IAC9B,OAAO,EAAE,MAAM;EAIf,uBAAW;IACP,KAAK,EAAE,KAAK",
-"sources": ["basic/color/_mixin-color.scss","basic/_var.scss","demo.scss","basic/font/_mixin-font.scss"],
+"sources": ["basic/color-bg-bd/_mixin-color.scss","basic/_var.scss","demo.scss","basic/font/_mixin-font.scss"],
 "names": [],
 "file": "demo.css"
 }

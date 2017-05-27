@@ -1,6 +1,6 @@
-@import "./basic/font/mixin-font";
-@import "./basic/color/mixin-color";
-@import "./basic/layout/mixin-layout";
+@import "../src/basic/font/mixin-font";
+@import "../src/basic/color-bg-bd/mixin-color";
+@import "../src/basic/margin-padding/mixin-layout";
 
 body {
     width: 10rem;

@@ -1,0 +1,19 @@
+@import '../var';
+@import '../function';
+
+@each $st in $sizeType {
+    @each $type in ('width', 'height', 'line') {
+        @each $s in $size {
+            .#{$st}-#{$type}-#{$s} {
+                #{$type}: sizeMethod($s, $st);
+            }
+        }
+    }
+}
+
+.mw-100 {
+    max-width: 100% !important;
+}
+.mh-100 {
+    max-height: 100% !important;
+}

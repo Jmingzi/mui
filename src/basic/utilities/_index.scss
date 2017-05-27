@@ -1,3 +1,14 @@
+@import '../var';
+@import 'align';
+@import 'position';
+@import 'sizing';
+
+@each $k,$v in $display {
+    .display-#{$k} {
+        display: $v;
+    }
+}
+
 .select-none {
     user-select: none;
     -webkit-user-select: none;
@@ -12,8 +23,9 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.fl { float: left }
-.fr { float: right }
+.fl { float: left; }
+.fr { float: right; }
+.fn { float: none; }
 
 .cl{
     &{ *zoom:1; }
@@ -26,3 +38,5 @@
         overflow: hidden;
     }
 }
+
+
