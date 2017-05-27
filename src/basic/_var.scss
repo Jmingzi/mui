@@ -49,3 +49,12 @@ $position: (s: static, r: relative, a: absolute, f: fixed);
 
 // 宽度／高度／行高
 $size: 5 10 15 20 30 40 45 50 55 60 70 80 90 100;
+
+$borderType: (
+        l: 0 0 0 1px,
+        r: 0 1px 0 0,
+        t: 1px 0 0 0,
+        b: 0 0 1px 0,
+        lr: 0 1px,
+        tb: 1px 0
+);
