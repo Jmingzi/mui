@@ -59,6 +59,8 @@ $mpSize: 5 10 15 20 25 30 40 !default;
 
 + bd-[color]
 + bd-[color]-[borderType]
++ bd-none
++ bd-radius-[mpSize]
 
 ## 按钮
 > 涉及尺寸的前缀均为 `px-/rem-`

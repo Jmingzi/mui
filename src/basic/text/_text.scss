@@ -6,11 +6,13 @@
 }
 
 .no-wrap {
-    @extend %nowrap;
+    white-space: nowrap;
 }
 
 .over-text {
-    @extend %overText;
+    @extend .no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .line-through { text-decoration: line-through }

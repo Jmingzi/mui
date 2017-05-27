@@ -3,8 +3,15 @@
 @import "../font/mixin-font";
 
 
-.m-bd-none {
+.bd-none {
     @include border($white, 0, 0, 1)
+}
+
+// radius
+@each $borderRadius in $mpSize {
+    .bd-radius-#{$borderRadius} {
+        border-radius: $borderRadius;
+    }
 }
 
 @each $k, $v in $color {

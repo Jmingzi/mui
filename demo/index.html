@@ -11,25 +11,24 @@
         width = width > 540 ? 540 : width
         docEl.style.fontSize = width / 10 + 'px';
     </script>
-    <link rel="stylesheet" href="../src/basic/mui.css">
+    <link rel="stylesheet" href="../dist/mui.css">
     <link rel="stylesheet" href="demo.css">
 </head>
-<body class="px-padding-10">
+<body class="px-padding-10 px-font-14">
 <script src="../src/component/loading/loading-svg.js"></script>
 
-<h1 id="name" class="rem-font-20 color-red text-center px-padding-tb10">MUI - 基于sass的UI轮子</h1>
+<h1 id="name" class="rem-font-20 color-error text-left px-padding-10">MUI - 基于sass的UI轮子</h1>
 
-<p class="px-font-12">注：尺寸的单位有px和rem，所有关于尺寸的命名都是以px-／rem-开头；样式的引入方式有3种：class／@mixin／@extend占位符"%";(@extend基础样式"."会带来额外的引用)</p>
+<a href="https://github.com/jmingzi/mui">【文档】</a>
 
-<div class="module font">
-    <h1 class="title">字体</h1>
-    <p class="px-font-14">说明：引入方式：class／占位符%</p>
-    <p class="px-font-14">14px单位字体／font-px-14／@include px(14)</p>
-    <p class="rem-font-14">14rem单位字体／font-14／@include rem(14)</p>
+<div>
+    <h1 class="bg-error color-fff px-margin-tb10 px-padding-l10">字体</h1>
+    <p>14px单位字体</p>
+    <p class="rem-font-14">14rem单位字体</p>
 </div>
 
-<div class="module text">
-    <h1 class="title">文本</h1>
+<div>
+    <h1 class="bg-error color-fff px-margin-tb10 px-padding-l10">文本</h1>
     <p>说明：文本包括文本对齐方式，overText，noWrap；引入方式：class／占位符%</p>
     <p class="text-left">text-left</p>
     <p class="text-center">text-center</p>
