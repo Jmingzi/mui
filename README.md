@@ -119,5 +119,5 @@ $align: left right center;
 
 ``` bash
 # compile
-sass --watch _index.scss:../../dist/mui.css --style compressed
+sass --watch _index.scss:../dist/mui.css --style compressed
 ```
