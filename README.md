@@ -3,7 +3,7 @@
 
 属性目录：
 
-+ [utilities](./src/basic/utilities)
++ [utilities](./src/utilities)
 + [边框](#边框)
 + [按钮](#按钮)
 + [颜色](#颜色)

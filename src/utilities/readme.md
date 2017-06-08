@@ -28,10 +28,16 @@ $align: top middle bottom text-bottom text-top;
 + fixed-bottom
 + px-width-[size]
 + px-height-[size]
-+ px-line-[size]
++ px-line-[size]    // line-height
 + rem-width-[size]
 + rem-height-[size]
-+ rem-line-[size]
++ rem-line-[size]   // line-height
++ width-100     // 100%
++ height-100    // 100%
++ max-width-100 
++ max-height-100
++ min-width-100
++ min-height-100
 
 @mixin
 
