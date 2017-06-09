@@ -38,6 +38,8 @@ $align: top middle bottom text-bottom text-top;
 + max-height-100
 + min-width-100
 + min-height-100
++ overflow-h
++ overflow-a
 
 @mixin
 
