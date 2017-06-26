@@ -1,10 +1,13 @@
 @import "../var";
 @import "../font/mixin-font";
+@import "../border/border";
 
 %btn {
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 
     &.btn-disabled {
         background-color: $gray-light !important;
@@ -20,10 +23,19 @@
             background-color: $v;
             border-color: darken($v, 20%);
             color: #ffffff;
+            @extend .bd-#{$k};
+
+            &:hover {
+                background-color: darken($v, 20%) !important;
+            }
 
             &.btn-inverse {
-                background-color: #fff;
+                background-color: transparent;
                 color: $v;
+
+                &:hover {
+                    color: #ffffff !important;
+                }
             }
         }
     }

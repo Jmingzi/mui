@@ -14,6 +14,12 @@ $size: 5 10 15 20 30 40 45 50 55 60 70 80 90 100;
 
 // [align]
 $align: top middle bottom text-bottom text-top;
+
+// [direction]
+$direction: left top bottom right;
+
+// [mpSize]
+$mpSize: 5 10 15 20 25 30 40 !default;
 ```
 
 + display-[display]
@@ -24,6 +30,7 @@ $align: top middle bottom text-bottom text-top;
 + cl
 + align-[align]
 + position-[position]
++ [direction]-[mpSize]
 + fixed-top
 + fixed-bottom
 + px-width-[size]

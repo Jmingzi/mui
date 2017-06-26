@@ -42,3 +42,12 @@
     }
     @content;
 }
+
+// top left right bottom
+@each $p in ('left', 'right', 'top', 'bottom') {
+    @each $s in $mpSize {
+        .#{$p}-#{$s} {
+            #{$p}: $s * 1px
+        }
+    }
+}
