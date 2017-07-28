@@ -1,7 +1,8 @@
 @import "../var";
 @import '../font/mixin-font';
+@import '../function';
 
-@each $k,$v in $position {
+@each $k, $v in $position {
     .position-#{$k} {
         position: $v;
     }
@@ -44,10 +45,13 @@
 }
 
 // top left right bottom
-@each $p in ('left', 'right', 'top', 'bottom') {
-    @each $s in $mpSize {
-        .#{$p}-#{$s} {
-            #{$p}: $s * 1px
+@each $i in $sizeType {
+    @each $p in ('left', 'right', 'top', 'bottom') {
+        @each $s in $mpSize {
+            .#{$i}-#{$p}-#{$s} {
+                #{$p}: sizeMethod($s, $i)
+            }
         }
     }
 }
+

@@ -17,6 +17,11 @@ $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
+$c666: #666666 !default;
+$c999: #999999 !default;
+$aaa: #aaaaaa !default;
+$ccc: #cccccc !default;
+
 // placeholder color-bg-bd
 $placeholder: #dcdcdc !default;
 
@@ -26,7 +31,7 @@ $baseFontSize: 75 !default;
 $sizeType: px rem !default;
 
 // 字体大小
-$font: 8 10 12 14 16 18 20 24 28 32 40 45 !default;
+$font: 8 10 12 14 16 18 20 24 28 32 40 45 50 !default;
 
 // 色值定义
 $color: (
@@ -35,11 +40,18 @@ $color: (
     info: $blue,
     dark: $gray-dark,
     warning: $orange,
-    fff: #ffffff
+    fff: $white,
+    c666: $c666,
+    c999: $c999,
+    aaa: $aaa,
+    ccc: $ccc,
+    gray-light: $gray-light,
+    gray-lighter: $gray-lighter,
+    gray-lightest: $gray-lightest
 ) !default;
 
 // 内外边距大小定义
-$mpSize: 5 10 15 20 25 30 40 !default;
+$mpSize: 5 10 15 20 25 30 40 45 50 55 60 70 80 90 100 !default;
 
 // display
 $display: (i: inline, b: block, ib: inline-block, n: none);
@@ -48,7 +60,7 @@ $display: (i: inline, b: block, ib: inline-block, n: none);
 $position: (s: static, r: relative, a: absolute, f: fixed);
 
 // 宽度／高度／行高
-$size: 5 10 15 20 30 40 45 50 55 60 70 80 90 100;
+$size: $mpSize;
 
 $borderType: (
     l: 0 0 0 1px,

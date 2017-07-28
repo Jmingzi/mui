@@ -19,32 +19,46 @@ $align: top middle bottom text-bottom text-top;
 $direction: left top bottom right;
 
 // [mpSize]
-$mpSize: 5 10 15 20 25 30 40 !default;
+$mpSize: $size;
 ```
 
 + display-[display]
++ ib-middle
++ ib-top
+
 + select-none
 + highlight-none
 + touch-scroll
+
 + fl/fr/fn
 + cl
+
 + align-[align]
 + position-[position]
-+ [direction]-[mpSize]
++ [px/rem]-[direction]-[mpSize]
 + fixed-top
 + fixed-bottom
+
++ line-normal
+
 + px-width-[size]
 + px-height-[size]
 + px-line-[size]    // line-height
+
 + rem-width-[size]
 + rem-height-[size]
 + rem-line-[size]   // line-height
+
++ width-25
++ width-33
++ width-50
 + width-100     // 100%
 + height-100    // 100%
 + max-width-100 
 + max-height-100
 + min-width-100
 + min-height-100
+
 + overflow-h
 + overflow-a
 

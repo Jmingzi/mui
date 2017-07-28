@@ -3,6 +3,8 @@
 @import "../font/mixin-font";
 @import "../var";
 
+.margin-auto { margin: 0 auto; }
+
 //$value: 5 10 15 20;
 //$type: px rem;
 @each $i in $sizeType {

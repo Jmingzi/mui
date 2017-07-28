@@ -1,6 +1,9 @@
 @import "../var";
 @import "./mixin-font";
 
+.font-0 {
+    font-size: 0 !important;
+}
 // font rem
 @each $i in $sizeType {
     @each $f in $font {

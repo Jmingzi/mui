@@ -10,9 +10,9 @@
     -webkit-transition: all .3s ease;
 
     &.btn-disabled {
-        background-color: $gray-light !important;
-        color: $gray-dark !important;
-        border-color: $gray !important;
+        background-color: $ccc !important;
+        color: $gray-lighter !important;
+        border-color: $aaa !important;
         
         cursor: not-allowed;
         pointer-events: none;
@@ -21,7 +21,7 @@
     @each $k, $v in $color {
         &.btn-#{$k} {
             background-color: $v;
-            border-color: darken($v, 20%);
+            border-color: darken($v, 10%);
             color: #ffffff;
             @extend .bd-#{$k};
 

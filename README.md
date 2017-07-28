@@ -25,6 +25,13 @@ $color: (
     dark: $gray-dark,
     warning: $orange,
     fff: #ffffff
+    c666: $c666,
+    c999: $c999,
+    aaa: $aaa,
+    ccc: $ccc,
+    gray-light: $gray-light,
+    gray-lighter: $gray-lighter,
+    gray-lightest: $gray-lightest
 ) !default;
 ```
 
@@ -50,7 +57,7 @@ $font: 8 10 12 14 16 18 20 24 28 32 40 45 !default;
 边距大小
 ``` sass
 // [mpSize]
-$mpSize: 5 10 15 20 25 30 40 !default;
+$mpSize: 5 10 15 20 25 30 40 45 50 55 60 70 80 90 100 !default;
 ```
 
 
@@ -82,6 +89,7 @@ $mpSize: 5 10 15 20 25 30 40 !default;
 ## 字体
 > 涉及尺寸的前缀均为 `px-/rem-`
 
++ font-0
 + [前缀]-font-[fontSize]
 
 ## 内外边距
@@ -92,6 +100,7 @@ $mpSize: 5 10 15 20 25 30 40 !default;
 $mpType: t r b l lr tb;
 ```
 
++ margin-auto
 + [前缀]-margin-[fontSize]-[mpType][mpSize]
 + [前缀]-padding-[fontSize]-[mpType][mpSize]
 
