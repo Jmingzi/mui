@@ -60,14 +60,22 @@ $font: 8 10 12 14 16 18 20 24 28 32 40 45 !default;
 $mpSize: 5 10 15 20 25 30 40 45 50 55 60 70 80 90 100 !default;
 ```
 
+圆角
+```sass
+// [radius]
+$radius: 2 3 4 5 6 10 15 20 25 !default;
+```
 
 ## 边框
 > 移动端有前缀m-，实现利用的伪元素边框缩放
 
 + bd-[color]
++ m-bd-[borderType]
 + bd-[color]-[borderType]
 + bd-none
-+ bd-radius-[mpSize]
++ m-bd-none
++ radius-[radius]
++ no-outline
 
 ## 按钮
 > 涉及尺寸的前缀均为 `px-/rem-`
@@ -117,12 +125,47 @@ $mpType: t r b l lr tb;
 // [align]
 $align: left right center;
 ```
-
 + text-[align]
 + no-wrap
 + over-text
 + line-through
 + line-none
+
+> 对齐方式
+
++ ib-top
++ ib-middle
++ ib-bottom
+
+## 阴影
+
++ shadow-block
++ shadow-bottom
++ inner-shadow
++ shadow-block-big
+
+## 手势
+
++ cursor-p
++ cursor-m
+
+## 透明度
+
++ opacity-0
++ opacity-1
+
+## 定位
+
++ fixed-top
++ fixed-bottom
++ top-0
++ left-0
++ right-0
++ bottom-0
++ z-index-[5 ~ 10]
++ [px/rem]-[top/left/right/bottom]-[mapSize]
+
+更多请点击查看 [utilities](./src/utilities)
 
 ## 编译
 
