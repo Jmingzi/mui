@@ -71,10 +71,12 @@ textarea {
     line-height: inherit;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    &:disabled {
+input,
+textarea,
+select {
+    &.disabled {
         cursor: not-allowed;
+        pointer-events: none;
     }
 }
 

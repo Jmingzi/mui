@@ -25,6 +25,7 @@ $mpSize: $size;
 + display-[display]
 + ib-middle
 + ib-top
++ ib-bottom
 
 + select-none
 + highlight-none

@@ -45,7 +45,6 @@ $color: (
     c999: $c999,
     aaa: $aaa,
     ccc: $ccc,
-    gray-light: $gray-light,
     gray-lighter: $gray-lighter,
     gray-lightest: $gray-lightest
 ) !default;
@@ -72,3 +71,5 @@ $borderType: (
 );
 
 $align: left right center;
+
+$radius: 2 3 4 5 6 10 15 20 25;

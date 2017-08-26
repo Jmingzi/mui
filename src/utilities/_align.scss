@@ -14,3 +14,8 @@
     display: inline-block;
     @extend .align-top;
 }
+
+.ib-bottom {
+    display: inline-block;
+    @extend .align-bottom;
+}

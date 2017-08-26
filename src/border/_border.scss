@@ -2,44 +2,54 @@
 @import "./mixin-border";
 @import "../font/mixin-font";
 
-
-.bd-none {
-    @include border($white, 0, 0, 1)
-}
-
-// radius
-@each $borderRadius in $mpSize {
-    .bd-radius-#{$borderRadius} {
-        border-radius: $borderRadius * 1px;
+// mobile border
+.m-bd { @include border(#cecece, 0, 1px, 1) }
+@each $type, $width in $borderType {
+    .m-bd-#{$type} {
+        @include border(#cecece, 0, $width, 1)
     }
 }
 
+// pc border with color
 @each $k, $v in $color {
-
-    // mobile border
-    .m-bd-#{$k} {
-        @include border($v, px2rem2(5), 1px, 1)
-    }
-
-    // pc border
     .bd-#{$k} {
         border: 1px solid $v;
     }
 
     @each $type, $width in $borderType {
-
-        .m-bd-#{$k}-#{$type} {
-            @include border($v, px2rem2(5), $width, 1)
-        }
-
         .bd-#{$k}-#{$type} {
             border-width: $width;
             border-style: solid;
             border-color: $v;
         }
-
     }
 }
 
+// none
+.m-bd-none {
+    &:before {
+        width: 0 !important;
+        height: 0 !important;
+        display: none !important;
+    }
+}
+
+.bd-none {
+    border: none !important;
+}
+
+// radius
+@each $borderRadius in $radius {
+    .radius-#{$borderRadius} {
+        border-radius: $borderRadius * 1px;
+    }
+}
+
+// outline
+.no-outline {
+    &:focus {
+        outline: none;
+    }
+}
 
 
