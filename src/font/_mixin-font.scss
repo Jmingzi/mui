@@ -21,12 +21,12 @@
 
 // font px
 @mixin px($f) {
-    font-size: $f * 1px;
+    font-size: $f * 1px !important;
 }
 
 // font rem
 @mixin rem($f) {
-    font-size: px2rem2($f);
+    font-size: px2rem2($f) !important;
 }
 
 
