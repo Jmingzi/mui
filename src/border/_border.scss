@@ -6,7 +6,7 @@
 .m-bd { @include border(#cecece, 0, 1px, 1) }
 @each $type, $width in $borderType {
     .m-bd-#{$type} {
-        @include border(#cecece, 0, $width, 1)
+        @include border(#e5e5e5, 0, $width, 1)
     }
 }
 
